@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sscapp-dev-100955-authRole",
+      "UnauthRoleArn": "arn:aws:iam::446451421466:role/amplify-sscapp-dev-100955-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::446451421466:role/amplify-sscapp-dev-100955-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-sscapp-dev-100955-deployment",
+      "UnauthRoleName": "amplify-sscapp-dev-100955-unauthRole",
+      "StackName": "amplify-sscapp-dev-100955",
+      "StackId": "arn:aws:cloudformation:us-east-1:446451421466:stack/amplify-sscapp-dev-100955/1d1e68c0-8f06-11eb-bc1c-12a48490849f",
+      "AmplifyAppId": "ds6iziecpgw70"
+    }
+  }
+}
