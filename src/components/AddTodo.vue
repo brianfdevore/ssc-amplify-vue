@@ -2,6 +2,7 @@
     <div>
         <form @submit="addTodo">
             <input type="text" name="title" v-model="title" placeholder="Add Todo...">
+            <!-- <input type="textarea" name="desc" v-model="desc" placeholder="Add description..."> -->
             <input type="submit" value="Add Todo" class="btn">
         </form>
     </div>
@@ -14,21 +15,24 @@ export default {
     name: 'AddTodo',
     data() {
         return {
-            title: ''
+            title: '',
+            desc: ''
         }
     },
     methods: {
         addTodo(e) {
             e.preventDefault();
             const newTodo = {
+                owner_id: '1',
                 name: this.title,
-                description: '',
+                description: this.desc,
                 done: false
             }
 
             //Send form submit event up to parent
             this.$emit('add-todo', newTodo);
             this.title = '';
+            this.desc = '';
         }
     }
 }

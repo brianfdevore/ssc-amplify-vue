@@ -1,5 +1,6 @@
 type Todo @model {
   id: ID!
+  owner_id: String!
   name: String!
   description: String
   done: Boolean
